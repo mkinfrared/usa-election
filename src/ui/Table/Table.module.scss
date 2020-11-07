@@ -1,0 +1,18 @@
+@import "styles/colors";
+
+.Table {
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid $gray-dark;
+
+    td,
+    th {
+      padding: 5px 10px;
+
+      &.order {
+        text-align: center;
+      }
+    }
+  }
+}

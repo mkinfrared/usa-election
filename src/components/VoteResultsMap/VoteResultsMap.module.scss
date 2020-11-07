@@ -1,0 +1,84 @@
+@import "styles/colors";
+
+.VoteResultsMap {
+
+  svg {
+
+    g {
+
+      &.republican {
+
+        path {
+          fill: $red-primary !important;
+        }
+
+        &.leading {
+
+          path {
+            fill: url(#republicanPattern) !important;
+          }
+        }
+      }
+
+      &.democrat {
+
+        path {
+          fill: $blue-primary !important;
+        }
+
+        &.leading {
+
+          path {
+            fill: url(#democratPattern) !important;
+          }
+        }
+      }
+    }
+
+    path {
+
+      &.republican {
+        fill: $red-primary !important;
+
+        &.leading {
+          fill: url(#republicanPattern) !important;
+
+          & ~ rect {
+            fill: url(#republicanPattern) !important;
+          }
+        }
+
+        & ~ rect {
+          fill: $red-primary !important;
+        }
+      }
+
+      &.democrat {
+        fill: $blue-primary !important;
+
+        &.leading {
+          fill: url(#democratPattern) !important;
+
+          & ~ rect {
+            fill: url(#democratPattern) !important;
+          }
+        }
+
+        & ~ rect {
+          fill: $blue-primary !important;
+        }
+      }
+    }
+  }
+}
+
+#diagonalHatch {
+
+  rect {
+    fill: green !important;
+  }
+
+  line {
+    stroke: purple !important;
+  }
+}

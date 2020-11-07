@@ -1,0 +1,33 @@
+.ProgressBar {
+  color: blueviolet;
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+
+  .progress {
+    align-items: center;
+    background-color: currentColor;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition: width 500ms linear;
+    will-change: width;
+
+    p {
+      color: #FFFFFF;
+      font-size: 24px;
+      left: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.flip {
+    transform: scale(-1, 1);
+
+    p {
+      transform: translateY(-50%) scale(-1, 1);
+    }
+  }
+}

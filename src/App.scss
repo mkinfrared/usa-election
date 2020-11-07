@@ -1,0 +1,28 @@
+.App {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 50px;
+  text-align: center;
+}
+
+.svg-swatch {
+  height: 14px;
+  overflow: hidden;
+  width: 30px;
+}
+
+.dem-stripe-background {
+  fill: #3571C0;
+}
+
+.texture {
+  shape-rendering: auto;
+  stroke: rgba(255, 255, 255, 0.6);
+  stroke-linecap: square;
+}
+
+.stripe-sample {
+  fill: url(#dem-striped-pattern);
+  height: 50px;
+  width: 50px;
+}

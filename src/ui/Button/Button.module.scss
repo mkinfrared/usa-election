@@ -1,0 +1,38 @@
+@import "styles/colors";
+
+.Button {
+  background-color: $gray-dark;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  outline: 0;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  transition: background 400ms;
+
+  &:active {
+    transform: scale(0.95);
+    transition: transform 100ms linear;
+  }
+
+  span.ripple {
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(0);
+  }
+}
+
+@keyframes ripple {
+
+  to {
+    opacity: 0;
+    transform: scale(4);
+  }
+}

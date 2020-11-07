@@ -1,0 +1,59 @@
+@import "styles/colors";
+
+.CandidateVotesResults {
+  margin-bottom: 40px;
+
+  .republican {
+    color: $red-primary;
+  }
+
+  .democrat {
+    color: $blue-primary;
+  }
+
+  .avatars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .avatar {
+      display: flex;
+      flex-direction: column;
+
+      .democrat {
+        background-color: $blue-primary;
+      }
+
+      .republican {
+        background-color: $red-primary;
+      }
+
+      > p {
+        background-color: transparent !important;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .progress {
+    background-color: $gray-light;
+    display: flex;
+    position: relative;
+
+    .winMark {
+      color: $gray-dark;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -66%);
+
+      &.democrat {
+        color: $blue-primary;
+      }
+
+      &.republican {
+        color: $red-primary;
+      }
+    }
+  }
+}

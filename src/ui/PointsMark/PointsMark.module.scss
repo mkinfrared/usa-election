@@ -1,0 +1,23 @@
+.PointsMark {
+  color: purple;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+
+  &:after {
+    border-left: 2px dashed currentColor;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 40px;
+    transform: translateX(-50%);
+    width: 0;
+  }
+
+  p {
+    color: currentColor;
+    font-size: 32px;
+  }
+}
