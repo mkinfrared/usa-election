@@ -37,7 +37,7 @@ const votes = createSlice({
         return;
       }
 
-      usState.democrat++;
+      usState.democrat += 20;
     },
     addRepublicanVote: (state, action: PayloadAction<Vote>) => {
       const { states } = state;
@@ -49,7 +49,7 @@ const votes = createSlice({
         return;
       }
 
-      usState.republican++;
+      usState.republican += 20;
     }
   }
 });

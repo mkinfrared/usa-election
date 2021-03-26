@@ -44,7 +44,7 @@ function* startVotesSaga() {
     yield spawn(getVoteSaga, state.abbreviation);
 
     if ((i + 1) % 5 === 0) {
-      yield delay(60 * 1000);
+      yield delay(5 * 1000);
     }
   }
 }

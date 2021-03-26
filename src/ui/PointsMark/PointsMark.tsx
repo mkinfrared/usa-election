@@ -5,13 +5,11 @@ import classNames from "utils/classNames";
 import css from "./PointsMark.module.scss";
 import { PointsMarkProps } from "./PointsMark.type";
 
-const PointsMark = ({ className, value }: PointsMarkProps) => {
-  return (
-    <div className={classNames(css.PointsMark, className)}>
-      <p>{value}</p>
-    </div>
-  );
-};
+const PointsMark = ({ className, value }: PointsMarkProps) => (
+  <div className={classNames(css.PointsMark, className)}>
+    <p>{value}</p>
+  </div>
+);
 
 export { PointsMark };
 

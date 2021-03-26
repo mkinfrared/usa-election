@@ -1,12 +1,15 @@
 {
   "plugins": [
-    "stylelint-order"
+    "stylelint-prettier",
+    "stylelint-order",
+    "stylelint-no-unsupported-browser-features"
   ],
   "rules": {
+    "prettier/prettier": true,
     "indentation": 2,
     "string-quotes": "double",
     "no-duplicate-selectors": true,
-    "color-hex-case": "upper",
+    "color-hex-case": "lower",
     "color-hex-length": "long",
     "selector-combinator-space-after": "always",
     "selector-attribute-quotes": "always",
@@ -33,6 +36,7 @@
       "custom-properties",
       "declarations"
     ],
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "plugin/no-unsupported-browser-features": true
   }
 }

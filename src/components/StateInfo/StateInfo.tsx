@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 
 import Float from "ui/Float";
 import Table from "ui/Table";
@@ -48,4 +48,4 @@ const StateInfo = ({ state, candidates }: StateInfoProps) => {
 
 export { StateInfo };
 
-export default React.memo(StateInfo);
+export default memo(StateInfo);

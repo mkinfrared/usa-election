@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 
 import FakeButton from "ui/FakeButton";
 import classNames from "utils/classNames";
@@ -25,4 +25,4 @@ const Avatar = ({ name, onClick, url, className }: AvatarProps) => {
 
 export { Avatar };
 
-export default React.memo(Avatar);
+export default memo(Avatar);

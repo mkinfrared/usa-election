@@ -8,7 +8,6 @@
     "react-app",
     "airbnb",
     "prettier",
-    "prettier/@typescript-eslint",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
@@ -150,6 +149,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "react/jsx-one-expression-per-line": "off",
     "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-key": [2, { "checkFragmentShorthand": true }],
     "react/state-in-constructor": "off",

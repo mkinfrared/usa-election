@@ -5,6 +5,14 @@ import classNames from "utils/classNames";
 import css from "./Button.module.scss";
 import { ButtonProps } from "./Button.type";
 
+/**
+ * Button component
+ * @param className
+ * @param children
+ * @param onClick
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const Button = ({ className, children, onClick }: ButtonProps) => {
   const ref = useRef<HTMLButtonElement | null>(null);
 

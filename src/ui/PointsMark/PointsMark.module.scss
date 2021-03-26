@@ -3,7 +3,7 @@
   height: 150px;
   overflow: hidden;
   position: relative;
-  width: fit-content;
+  width: fit-content; /* stylelint-disable-line */
 
   &:after {
     border-left: 2px dashed currentColor;

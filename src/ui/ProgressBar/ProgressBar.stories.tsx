@@ -1,5 +1,4 @@
 import { Meta, Story } from "@storybook/react/types-6-0";
-import React from "react";
 
 import { ProgressBar } from "./ProgressBar";
 import { ProgressBarProps } from "./ProgressBar.type";
@@ -18,12 +17,16 @@ Default.args = {
   percent: 33
 };
 
-const Template2: Story<ProgressBarProps> = (args) => (
-  <div style={{ display: "flex", justifyContent: "space-between" }}>
-    <ProgressBar value={args.value} percent={args.percent} />
-    <ProgressBar {...args} />
-  </div>
-);
+const Template2: Story<ProgressBarProps> = (args) => {
+  const { value, percent } = args;
+
+  return (
+    <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <ProgressBar value={value} percent={percent} />
+      <ProgressBar {...args} />
+    </div>
+  );
+};
 
 const DoubleProgress = Template2.bind({});
 

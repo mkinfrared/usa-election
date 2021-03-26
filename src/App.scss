@@ -1,4 +1,6 @@
 .App {
+  display: grid;
+  gap: 20px;
   margin: 0 auto;
   max-width: 1240px;
   padding: 50px;
@@ -12,7 +14,7 @@
 }
 
 .dem-stripe-background {
-  fill: #3571C0;
+  fill: #3571c0;
 }
 
 .texture {

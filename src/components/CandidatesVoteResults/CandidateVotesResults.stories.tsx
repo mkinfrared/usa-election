@@ -1,5 +1,4 @@
 import { Meta, Story } from "@storybook/react/types-6-0";
-import React from "react";
 
 import cartman from "images/Eric-cartman.png";
 import broflovski from "images/Kyle-broflovski.png";
@@ -27,7 +26,12 @@ Default.args = {
   candidates: [
     { name: "Eric Cartman", party: "republican", imageSrc: cartman },
     { name: "Kyle Broflovski", party: "democrat", imageSrc: broflovski }
-  ]
+  ],
+  winner: {
+    party: "republican",
+    imageSrc: "",
+    name: "Eric Cartman"
+  }
 };
 
 export { Default };
