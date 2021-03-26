@@ -13,7 +13,8 @@
     "lint:ts": "eslint --cache --fix \"src/**/*.ts?(x)\"",
     "lint:styles": "stylelint \"**/*.scss\" --syntax scss --fix --cache",
     "format": "prettier --write \"./src\"",
-    "precommit": "yarn lint && git add ."
+    "precommit": "yarn lint && git add .",
+    "chromatic": "npx chromatic --project-token 11a534ade34b"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
@@ -49,6 +50,7 @@
     "@types/react-redux": "7.1.16",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
+    "chromatic": "^5.7.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-typescript": "^2.4.0",
